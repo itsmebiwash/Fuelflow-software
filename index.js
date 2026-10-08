@@ -21,8 +21,8 @@ function createWindow() {
   mainWindow.setMenu(null);
 
   // For now, loading the live website. 
-  // Loading the live Vercel website to fix the blank screen issue.
-  mainWindow.loadURL('https://demo-git-main-biwashs-projects-a2557444.vercel.app'); 
+  // Loading the live production website.
+  mainWindow.loadURL('https://www.biwashd.com.np/fuelflow'); 
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
