@@ -1,6 +1,6 @@
 {
   "name": "fuelflow-desktop",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "FuelFlow Desktop Application",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,8 @@
       "output": "dist"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "icon.png"
     },
     "nsis": {
       "oneClick": true,
