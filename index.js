@@ -12,13 +12,17 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false
     },
+    autoHideMenuBar: true, // Hides the File/Edit/View menu
     // icon: path.join(__dirname, 'icon.ico'), // Icon can be added later
     show: false
   });
 
+  // Remove the menu entirely
+  mainWindow.setMenu(null);
+
   // For now, loading the live website. 
-  // Later we will bundle the local Next.js standalone build here.
-  // Replace this URL with the actual deployed website URL for now, or localhost if testing local.
+  // Replace this URL with the actual deployed website URL for now! 
+  // 'http://localhost:3000' is causing the blank screen if Next.js isn't running locally.
   mainWindow.loadURL('http://localhost:3000'); 
 
   mainWindow.once('ready-to-show', () => {
