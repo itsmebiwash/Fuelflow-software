@@ -21,9 +21,8 @@ function createWindow() {
   mainWindow.setMenu(null);
 
   // For now, loading the live website. 
-  // Replace this URL with the actual deployed website URL for now! 
-  // 'http://localhost:3000' is causing the blank screen if Next.js isn't running locally.
-  mainWindow.loadURL('http://localhost:3000'); 
+  // Loading the live Vercel website to fix the blank screen issue.
+  mainWindow.loadURL('https://demo-git-main-biwashs-projects-a2557444.vercel.app'); 
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
