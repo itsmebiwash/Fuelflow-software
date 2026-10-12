@@ -13,7 +13,7 @@ function createWindow() {
       contextIsolation: false
     },
     autoHideMenuBar: true, // Hides the File/Edit/View menu
-    icon: path.join(__dirname, 'icon.png'), // Use the logo for the app window
+    icon: path.join(__dirname, process.platform === 'win32' ? 'icon.ico' : 'icon.png'), // Use the logo for the app window
     show: false
   });
 
